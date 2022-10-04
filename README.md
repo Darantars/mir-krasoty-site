@@ -1,1 +1,3 @@
-# mir-krasoty-site
+Beuty-World
+
+Bugayev Nikita
