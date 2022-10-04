@@ -170,6 +170,7 @@ header {
     color: #333;    
     display: block;
     box-sizing: border-box;
+    margin: 0px;
 }
 .hero-spech p{
     font-family: 'Montserrat';
