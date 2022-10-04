@@ -35,7 +35,8 @@ main {
     padding-bottom: 0%;;
     
 }
-.title{
+
+#weTitle{
    
     font-family: 'Montserrat';
     font-style: normal;
@@ -59,10 +60,7 @@ main {
    align-items: center;
 }
 
-.header-top:not(:last-child) {
-    
-   
- }
+
 
 .nav {
     width: max-content;
@@ -256,6 +254,40 @@ header {
 
 /*        MAIN        */
 
+.section:not(:last-child) {
+    padding-bottom: 100px;
+    height: fit-content;
+}
+
+#weVideo{
+    float: right; 
+    margin: 7px 0 7px 7px; 
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(.jpg);
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+#weVideo::after{               /* Почему-то не работает */
+
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background: url(icons/playVideo.svg);
+    display: block;
+    position: absolute; 
+    z-index: 2; 
+
+}
+
+.container-set{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
 
 .container-inner{
     font-family: 'Montserrat';
@@ -263,6 +295,8 @@ header {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
+    height: fit-content;
+    display: block;
 }
 
 .container-inner h3{
@@ -279,16 +313,91 @@ header {
     font-size: 18px;
     line-height: 22px;
 }
+
 .container-mini {
-    
+
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
     text-align: center;
+    width: 350px;
+    
 }
+
+.container-mini-image{
+    padding-bottom: 28px;
+}
+
+               /*             FOOTER              */
 
 footer{
     flex-shrink: 0;
+}
+.footer-roll{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 27px;
+    align-items: center;
+}
+.footer-info h4{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #333333;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+
+.footer-info a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration-line: underline;
+    color: #278AFF;
+    margin: 0px;
+    
+
+}
+
+.footer-nav {
+    width: max-content;
+}
+
+
+.footer-nav ul {
+    display: inline-flex;
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    float: right;
+}
+
+
+
+.footer-nav li:not(:last-child) {
+    margin-right: 28px;
+}
+
+.footer-nav a {
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333;
+    transition: 0.15s color;
+    text-decoration: none;
+    align-items: center;
+}
+
+.footer-nav a:hover {
+    color: #00BF78;
 }
