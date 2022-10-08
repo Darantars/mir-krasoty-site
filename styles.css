@@ -48,10 +48,11 @@ main {
 
 }
 
+button:hover{
+    cursor: pointer;
+}
 
 /*-- Header --*/
-
-
 
 .header-top {
    display: flex;
@@ -60,12 +61,9 @@ main {
    align-items: center;
 }
 
-
-
 .nav {
     width: max-content;
 }
-
 
 .nav ul {
     display: inline-flex;
@@ -74,8 +72,6 @@ main {
     margin: 0%;
     float: right;
 }
-
-
 
 .nav li:not(:last-child) {
     margin-right: 28px;
@@ -103,7 +99,6 @@ main {
     padding: 30px 0 0px;
 }
 
-
 header {
     background: #F8F6F7 url('./icons/header-bg.png'); 
     overflow: hidden;
@@ -124,8 +119,6 @@ header {
    
 }
 
-
-
 .phone-info {
     display:flex; 
     flex-direction: column; 
@@ -135,13 +128,14 @@ header {
 
 .phone-info p {
     font-family: 'Montserrat';
-     font-style: normal;
+    font-style: normal;
     font-weight: 400;
     font-size: 11px;
     line-height: 14px;
     margin: 0;
     padding: 0;
 }
+
 .phone-info a {
     text-decoration: none;
     font-family: 'Montserrat';
@@ -152,6 +146,7 @@ header {
 
     margin-bottom:4px;
     color: #333;}
+
 .hero-top{
     display: flex;
     max-width: 1100px;
@@ -159,6 +154,7 @@ header {
     position: relative;
     justify-content: space-between;
 }
+
 .hero-spech h1{
     font-family: 'Montserrat';
     font-style: normal;
@@ -170,6 +166,7 @@ header {
     box-sizing: border-box;
     margin: 0px;
 }
+
 .hero-spech p{
     font-family: 'Montserrat';
     font-style: normal;
@@ -180,13 +177,13 @@ header {
     padding-top: 17px;
     padding-bottom: 76px;
 }
+
 .hero-spech{
    padding-top: 67px;
    margin-left: -135px ;
    
 
 }
-
 
 .header-girl{
     display: block;
@@ -205,6 +202,7 @@ header {
     display: block;
     position: absolute;
 }
+
 .header-girl::before{
     content: '';
     width: 472px;
@@ -217,16 +215,17 @@ header {
     border-radius: 50%;
     z-index: 1;
 }
+
 .social{
     padding-top: 130px;
     display: block;
  
 }   
+
 .social img{
     height: 28px;
     width: 28px;
 }
-
 
 .social li{
    list-style: none; 
@@ -239,10 +238,7 @@ header {
     font-weight: 500;
     font-size: 14px;
     line-height: 14px;
-    
-    
     color: #FFFFFF;
-    
     width: 203px;
     height: 48px;
     border: none;
@@ -269,7 +265,6 @@ header {
 }
 
 #weVideo::after{               /* Почему-то не работает */
-
     height: 100%;
     width: 100%;
     z-index: 2;
@@ -277,17 +272,17 @@ header {
     display: block;
     position: absolute; 
     z-index: 2; 
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 
 }
 
 .container-set{
     display: flex;
     justify-content: space-between;
-    
 }
-
-
-
 
 .container-inner{
     font-family: 'Montserrat';
@@ -306,6 +301,7 @@ header {
     font-size: 20px;
     line-height: 32px;
 }
+
 .container-mini b{
     font-family: 'Montserrat';
     font-style: normal;
@@ -315,7 +311,6 @@ header {
 }
 
 .container-mini {
-
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -323,7 +318,6 @@ header {
     line-height: 22px;
     text-align: center;
     width: 350px;
-    
 }
 
 .container-mini-image{
@@ -335,12 +329,14 @@ header {
 footer{
     flex-shrink: 0;
 }
+
 .footer-roll{
     display: flex;
     justify-content: space-between;
     padding-bottom: 27px;
     align-items: center;
 }
+
 .footer-info h4{
     font-family: 'Montserrat';
     font-style: normal;
@@ -362,16 +358,13 @@ footer{
     text-decoration-line: underline;
     color: #278AFF;
     margin: 0px;
-    
-
 }
 
-.footer-nav {
+.footer-nav{
     width: max-content;
 }
 
-
-.footer-nav ul {
+.footer-nav ul{
     display: inline-flex;
     list-style: none;
     padding: 0%;
@@ -379,14 +372,11 @@ footer{
     float: right;
 }
 
-
-
-.footer-nav li:not(:last-child) {
+.footer-nav li:not(:last-child){
     margin-right: 28px;
 }
 
-.footer-nav a {
-
+.footer-nav a{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -398,6 +388,6 @@ footer{
     align-items: center;
 }
 
-.footer-nav a:hover {
+.footer-nav a:hover{
     color: #00BF78;
 }
